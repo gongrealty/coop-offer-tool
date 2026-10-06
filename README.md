@@ -27,12 +27,12 @@ It's just static files, so host the folder anywhere:
 - **Cloudflare Pages**, or any static web host
 
 ## ⚠️ Customize before you publish
-This repo ships with Gong Realty's details as a working example. Replace them with your own
+This repo ships with obvious **placeholders** — swap them for your own details
 (a quick find-and-replace, or hand this repo to Claude and ask it to rebrand):
-1. **Contact email** — search for `i.gong@casa-blanca.com`
-2. **Phone** — search for `914-331-8881` and `9143318881`
-3. **Name & brokerage** — search for `Ian Gong`, `Gong Realty`, `Lizhi Gong`, `Casa Blanca`
-4. **License numbers** in the footer
+1. **Contact email** — replace `you@example.com`
+2. **Phone** — replace `555-555-0100`
+3. **Name & brokerage** — replace `Your Name`, `Your Brokerage`, `Legal Name`
+4. **License / credential line** in the footer
 5. **Preferred lenders** — `index.html` ships with clearly-marked **placeholder** lender cards (highlighted in amber). Swap in your own lenders, or delete the whole lender section.
 6. **Brand colors** — the CSS `:root` variables at the top of each file
 7. **Buyer bios** in `step-2.html`

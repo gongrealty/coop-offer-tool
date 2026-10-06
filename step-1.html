@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Step 1: REBNY Financial Statement — Gong Realty</title>
+<title>Step 1: REBNY Financial Statement — Your Brokerage</title>
 <meta name="description" content="Fill out the REBNY Financial Statement for your co-op or condo board package. Live preview, automatic totals, and a print-ready PDF. Everything stays on your device." />
 <meta name="robots" content="noindex" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -243,7 +243,7 @@ table.cc tr.tot td{font-weight:700;border-top:1.5px solid var(--line-strong)}
 
 <header class="bar">
   <div class="bar-in">
-    <a class="brand" href="index.html" title="Back to your co-op checklist"><b>Gong Realty</b><span>← Checklist · Step 1</span></a>
+    <a class="brand" href="index.html" title="Back to your co-op checklist"><b>Your Brokerage</b><span>← Checklist · Step 1</span></a>
     <div class="status" id="status"><i></i>Saved on this device</div>
     <div class="actions">
       <button class="btn" id="btnSave" type="button" title="Download a file you can reopen later">Save a copy</button>
@@ -290,7 +290,7 @@ table.cc tr.tot td{font-weight:700;border-top:1.5px solid var(--line-strong)}
 <footer class="foot">
   <a href="index.html" style="color:var(--ink);font-weight:600">← Back to your co-op checklist</a>
   <a href="step-2.html" style="color:var(--ink);font-weight:600">Next: Step 2, your buyer bio →</a>
-  <span>Gong Realty · Ian Gong (licensed as Lizhi Gong), Licensed Real Estate Salesperson, Casa Blanca Real Estate · 914-331-8881</span>
+  <span>Your Brokerage · Your Name (licensed as Legal Name), Licensed Real Estate Salesperson, Your Brokerage · 555-555-0100</span>
   <span>Form: REBNY Financial Statement, Rev. May/12</span>
   <button class="link" id="btnExample" type="button">Fill with example numbers</button>
   <button class="link" id="btnClear" type="button">Erase everything</button>
@@ -841,7 +841,7 @@ async function makePdf(){
   }
   lastRects=rects;
   doc.setTitle("REBNY Financial Statement"+(S.app.name?" - "+clean(S.app.name):""));
-  doc.setCreator("Gong Realty"); doc.setProducer("gongrealty.com/coop");
+  doc.setCreator("Your Brokerage"); doc.setProducer("example.com/coop");
   return await doc.save();
 }
 
@@ -923,7 +923,7 @@ function flatRows(){
 }
 $("#btnSave").addEventListener("click",()=>{
   try{
-    const aoa=[["REBNY Financial Statement - saved answers from gongrealty.com/coop/step-1"],["To keep working, open gongrealty.com/coop/step-1 and click Open saved copy. Keep the Field ID column as it is."],[],["Section","Item","Person","Value","Field ID"],...flatRows()];
+    const aoa=[["REBNY Financial Statement - saved answers from example.com/coop/step-1"],["To keep working, open example.com/coop/step-1 and click Open saved copy. Keep the Field ID column as it is."],[],["Section","Item","Person","Value","Field ID"],...flatRows()];
     const ws=XLSX.utils.aoa_to_sheet(aoa); ws["!cols"]=[{wch:28},{wch:34},{wch:18},{wch:40},{wch:22}];
     const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,"Financial Statement");
     const out=XLSX.write(wb,{bookType:"xlsx",type:"array"});
