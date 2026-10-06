@@ -237,7 +237,7 @@ table.cc tr.tot td{font-weight:700;border-top:1.5px solid var(--line-strong)}
 }
 @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
-<style>/* shared copy: hide backend-only features */.se-row,.se-status,.sharebox,[data-share],[data-sharenote]{display:none!important}</style>
+<style>/* shared copy: backend-only share feature hidden */.sharebox,[data-share],[data-sharenote]{display:none!important}</style>
 </head>
 <body>
 
@@ -503,10 +503,8 @@ function build(){
     `<div style="margin-bottom:14px"><label class="chip"><input type="checkbox" id="hasCo" ${S.hasCo?"checked":""}> I'm applying with a co-applicant (spouse, partner, co-buyer)</label></div>
      <div class="grid">${person("app")}<div class="co">${person("co")}</div></div>`);
 
-  html += section("s-deal","Step 2","The apartment you're buying","Paste the StreetEasy link for the apartment. We'll fill in the price, the building's down payment requirement, the maintenance, a current interest rate and estimated closing costs. You can change any of them. This part isn't printed on the form.",
-    `<div class="f"><label for="i-deal-link">StreetEasy link for the apartment</label>
-      <div class="se-row"><input type="url" id="i-deal-link" data-path="deal.link" inputmode="url" autocomplete="off" placeholder="https://streeteasy.com/building/…" value="${esc(S.deal.link)}"><button type="button" class="btn2" id="seGo">Get listing details</button></div>
-      <div class="se-status" id="seStatus"></div></div>
+  html += section("s-deal","Step 2","The apartment you're buying","Fill in the apartment's purchase price and the rest of your numbers below. This part isn't printed on the form — it just works out your down payment and estimated closing costs.",
+    `
      <div class="calc" style="margin-top:14px">
       <div class="f"><label for="i-deal-price">Purchase price</label>${moneyIn("deal.price")}</div>
       <div class="f"><div class="lblrow"><label for="i-deal-downv">Down payment</label><span class="seg" id="downSeg"><button type="button" data-dm="pct" class="${S.deal.downMode!=="amt"?"on":""}">%</button><button type="button" data-dm="amt" class="${S.deal.downMode==="amt"?"on":""}">$</button></span></div>
