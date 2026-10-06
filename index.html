@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Co-op offer checklist | Gong Realty</title>
+<meta name="description" content="Five steps to a strong co-op offer package: financial statement, buyer bio, pre-approval letter, proof of funds, and extra documents some sellers ask for." />
+<meta name="robots" content="noindex" />
+<meta property="og:title" content="Five steps to a winning co-op offer" />
+<meta property="og:description" content="Financial statement, buyer bio, pre-approval, proof of funds, and extra documents some sellers ask for. Most people finish in one evening." />
+<meta property="og:image" content="https://gongrealty.com/og-cover.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+<style>
+:root{
+  --navy:#0d2748; --navy-2:#132f57; --gold:#b79554; --gold-2:#d4b77c; --wine:#741a2f;
+  --bg:#f0ede4; --paper:#fbfaf6; --line:#dcd6c8; --line-strong:#c4bca9;
+  --ink:#16223a; --muted:#5e6778; --faint:#6b717c; --ok:#2f6b4f;
+  --gold-ink:#8a6a2c; --focus:#8a6a2c;
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark;
+    --bg:#0b1628; --paper:#111f36; --line:#22334f; --line-strong:#314767; --ink:#e9edf4; --muted:#a2b3c9; --faint:#7b8ca5; --ok:#6fc29a; --gold-ink:#d4b77c; --focus:#d4b77c; }
+}
+:root[data-theme="dark"]{ color-scheme:dark;
+  --bg:#0b1628; --paper:#111f36; --line:#22334f; --line-strong:#314767; --ink:#e9edf4; --muted:#a2b3c9; --faint:#7b8ca5; --ok:#6fc29a; --gold-ink:#d4b77c; --focus:#d4b77c; }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:"kern","liga","clig","calt"}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.hero :focus-visible,.num :focus-visible{outline-color:var(--gold-2)}
+p,li{text-wrap:pretty}
+.skip{position:absolute;left:12px;top:-60px;z-index:60;background:var(--paper);color:var(--ink);padding:10px 14px;border-radius:8px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--navy);color:#eef2f7;position:relative;overflow:hidden;padding:calc(28px + env(safe-area-inset-top,0px)) 20px 120px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 420px at 88% -10%, rgba(183,149,84,.28), transparent 60%),
+  repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 88px);pointer-events:none}
+.hero-in{position:relative;max-width:1080px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:56px}
+.top b{font:600 24px/1 var(--serif);letter-spacing:.01em}
+.top b a{text-decoration:none}
+.top span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#a2b3c9}
+.hero h1{font:600 clamp(42px,6.6vw,82px)/1.02 var(--serif);margin:0;letter-spacing:-.015em;text-wrap:balance;max-width:19ch}
+.hero h1 em{font-style:italic;color:var(--gold-2);padding-bottom:.08em}
+.hero p.lede{max-width:52ch;color:#c7d2e1;font-size:17px;margin:20px 0 0}
+.progress{margin-top:36px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.bar{flex:1 1 260px;max-width:520px;height:10px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-2));border-radius:99px;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.count{font-weight:700;font-size:15px;color:#eef2f7;font-variant-numeric:tabular-nums}
+.count small{font-weight:500;color:#a2b3c9}
+
+/* ---------- list ---------- */
+.list{max-width:1080px;margin:-72px auto 0;padding:0 20px 40px;position:relative;display:flex;flex-direction:column;gap:18px;counter-reset:s}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;display:grid;grid-template-columns:128px minmax(0,1fr);overflow:hidden;box-shadow:0 1px 2px rgba(13,39,72,.06),0 14px 40px -18px rgba(13,39,72,.28);transition:opacity .25s, transform .25s}
+.num{background:var(--navy-2);color:var(--gold-2);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:26px 8px;gap:12px;position:relative}
+.num b{font:600 88px/.8 var(--serif);font-variant-numeric:lining-nums}
+.num .tick{width:44px;height:44px;border-radius:50%;border:2px solid rgba(212,183,124,.55);display:grid;place-items:center;cursor:pointer;background:transparent;color:transparent;transition:background-color .2s,border-color .2s,color .2s,transform .12s}
+.num .tick:active{transform:scale(.94)}
+.num .tick:hover{border-color:var(--gold-2)}
+.num .tick svg{width:22px;height:22px}
+.num .tick-l{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a2b3c9;text-align:center}
+.body{padding:26px 28px 28px;min-width:0}
+.kicker{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--gold);color:var(--gold-ink);border-radius:6px;padding:2px 9px}
+.step h2{font:600 clamp(28px,3.4vw,38px)/1.08 var(--serif);margin:0 0 12px;letter-spacing:-.005em;text-wrap:balance}
+.step p{margin:0 0 12px;color:var(--muted);max-width:66ch}
+.step p b{color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--navy);color:#fff;border:0;border-radius:10px;padding:13px 20px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;min-height:48px;transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,background-color .2s,border-color .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(13,39,72,.55)}
+.btn:active{transform:translateY(0) scale(.98);box-shadow:none;transition-duration:.08s}
+.btn.gold{background:var(--gold);color:#1a1405}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line-strong)}
+.btn.ghost:hover{border-color:var(--gold)}
+.btn svg{width:18px;height:18px;flex:none}
+.mail{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--paper);border-radius:10px;padding:2px 2px 2px 14px;font-weight:600}
+.mail .addr{user-select:all}
+.copylbl{font-weight:600;color:var(--ink)}
+.cp{display:grid;place-items:center;width:44px;height:44px;flex:none;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;transition:background-color .2s,color .2s}
+.cp:active{transform:scale(.94)}
+.cp:hover{background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--ink)}
+.cp svg{width:18px;height:18px}
+.cp.ok{color:var(--ok)}
+.fine{font-size:13px;color:var(--faint)}
+p.fine.after{margin-top:10px}
+
+/* lenders */
+.lenders{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:16px 0 4px;align-items:start}
+.lender{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:color-mix(in srgb,var(--bg) 45%,var(--paper));min-width:0}
+.lender .bank{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink)}
+.lender .nm{font:600 21px/1.15 var(--serif);margin:3px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lender .ttl{font-size:12.5px;line-height:1.5;color:var(--muted)}
+.lender .ttl span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} /* title, then NMLS on its own line: every box the same height */
+.lender summary{list-style:none;cursor:pointer;display:flex;gap:10px;align-items:flex-start;border-radius:6px;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.lender summary::-webkit-details-marker{display:none}
+.lender summary>div{min-width:0;flex:1}
+.lender .tri{flex:none;width:0;height:0;margin-top:4px;border-left:7px solid var(--gold-ink);border-top:5px solid transparent;border-bottom:5px solid transparent;transition:transform .2s}
+.lender[open] .tri{transform:rotate(90deg)}
+.lender .ct{margin-top:8px;padding-left:17px;font-size:13px;display:flex;flex-direction:column;gap:2px;font-variant-numeric:tabular-nums}
+.lender .ct a{text-decoration:none;overflow-wrap:anywhere;padding:3px 0}
+.lender .ct a:hover{text-decoration:underline}
+.flow{margin:4px 0 14px;padding-left:20px;display:flex;flex-direction:column;gap:6px;color:var(--muted);max-width:70ch}
+.flow li::marker{color:var(--gold)}
+.flow b{color:var(--ink)}
+.callout{border-left:3px solid var(--gold);padding:10px 14px;margin-top:14px;background:color-mix(in srgb,var(--gold) 9%,transparent);border-radius:0 10px 10px 0;color:var(--ink);font-size:14px;max-width:72ch}
+
+/* done state */
+.step.done{opacity:.62}
+.step.done h2{text-decoration:line-through;text-decoration-color:var(--gold);text-decoration-thickness:2px}
+.step.done .tick{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.step.done .num b{color:rgba(212,183,124,.45)}
+
+.optdiv{display:flex;align-items:center;gap:16px;margin:14px 0 4px;color:var(--gold-ink);font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.optdiv::before,.optdiv::after{content:"";flex:1;height:0;border-top:1.5px solid var(--line-strong)}
+.foot{max-width:1080px;margin:0 auto;padding:10px 20px 48px;font-size:12.5px;color:var(--faint);display:flex;flex-direction:column;gap:4px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 16px;border-radius:9px;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:50;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+
+@media (max-width:680px){
+  .hero{padding-left:16px;padding-right:16px;padding-bottom:100px}
+  .top{margin-bottom:36px}
+  .list{padding:0 16px 32px}
+  .step{grid-template-columns:minmax(0,1fr)}
+  .num{flex-direction:row;justify-content:space-between;padding:16px 20px}
+  .num b{font-size:64px}
+  .num .tick-wrap{display:flex;align-items:center;gap:10px}
+  .body{padding:20px}
+  .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}.btn:hover,.btn:active,.tick:active,.cp:active{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#steps">Skip to the steps</a>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="top"><b><a href="index.html">Gong Realty</a></b><span>Co-op offer package</span></div>
+    <h1>Five steps to a <em>winning</em> co-op offer.</h1>
+    <p class="lede">The board and the seller want proof you're ready. Most people finish these in one evening, then I take it from there.</p>
+    <div class="progress" aria-live="polite">
+      <div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+      <div class="count" id="count">0 of 4 done <small>· step 5 only if asked</small></div>
+    </div>
+  </div>
+</header>
+
+<main class="list" id="steps">
+
+  <article class="step" data-step="1">
+    <div class="num"><b>1</b><div class="tick-wrap"><button class="tick" type="button" aria-pressed="false" aria-label="Mark step 1 done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><div class="tick-l">Done?</div></div></div>
+    <div class="body">
+      <h2>Fill out the REBNY Financial Statement</h2>
+      <p>This is the standard Real Estate Board of New York (REBNY) financial statement that every co-op board asks for: your income, monthly expenses, what you own and what you owe. The page adds up the totals for you and shows the finished form as you type. When you're done, <b>download the PDF and email it to me</b>.</p>
+      <p>It also works out your <b>down payment</b>, which you'll need for Step 4. Many co-ops ask for 20%, some ask for 25% or more, and you can always put down more or pay all cash.</p>
+      <div class="acts"><a class="btn gold" href="step-1.html">Start the financial statement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <span class="fine">Everything you type stays on your device.</span></div>
+    </div>
+  </article>
+
+  <article class="step" data-step="2">
+    <div class="num"><b>2</b><div class="tick-wrap"><button class="tick" type="button" aria-pressed="false" aria-label="Mark step 2 done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><div class="tick-l">Done?</div></div></div>
+    <div class="body">
+      <h2>Write your buyer bio</h2>
+      <p>A short paragraph about who you are, written for the board. It's not a love letter to the apartment. It shows you're responsible, steady and easy to approve. Start from three bios that have won offers before, and have AI tailor one to you, this building and this neighborhood.</p>
+      <div class="acts"><a class="btn" href="step-2.html">See the sample bios <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </article>
+
+  <article class="step" data-step="3">
+    <div class="num"><b>3</b><div class="tick-wrap"><button class="tick" type="button" aria-pressed="false" aria-label="Mark step 3 done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><div class="tick-l">Done?</div></div></div>
+    <div class="body">
+      <div class="kicker"><span class="badge">If financing</span></div>
+      <h2>Get your pre-approval letter</h2>
+      <p><b>You only need this if you're financing the purchase.</b> Paying all cash? You can skip straight to Step 4.</p>
+      <p>A financing pre-approval letter shows the seller and the board that you can get the loan. Here's how it works:</p>
+      <ul class="flow">
+        <li><b>Using one of my preferred lenders?</b> Reach out to them directly. Click a lender below to see their phone and email.</li>
+        <li><b>Already have a lender?</b> Make sure they know NYC co-op sales well. Co-op financing has its own rules, and not every lender handles it. Then set up a discovery call.</li>
+        <li><b>Either way, have the discovery call first,</b> before you submit any personal financial information online.</li>
+      </ul>
+      <p>These are my preferred lenders. Each one has worked with me before and knows NYC co-op financing.</p>
+      <div class="acts"><a class="btn ghost" href="ian-gong-preferred-lenders.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>Open the lender list (PDF)</a></div>
+      <div class="lenders">
+        <details class="lender"><summary><span class="tri" aria-hidden="true"></span><div><div class="bank">Guaranteed Rate Affinity</div><div class="nm">Brian Scott Cohen</div><div class="ttl"><span>SVP of Mortgage Lending</span><span>NMLS #410025</span></div></div></summary>
+          <div class="ct"><a href="tel:+16465848009">(646) 584-8009</a><a href="mailto:brianscottcohen@grarate.com">brianscottcohen@grarate.com</a></div></details>
+        <details class="lender"><summary><span class="tri" aria-hidden="true"></span><div><div class="bank">Chase</div><div class="nm">Christopher D. Ruddle</div><div class="ttl"><span>Sr. Home Lending Advisor II</span><span>NMLS #602271</span></div></div></summary>
+          <div class="ct"><a href="tel:+19177218571">(917) 721-8571</a><a href="mailto:christopher.d.ruddle@chase.com">christopher.d.ruddle@chase.com</a></div></details>
+        <details class="lender"><summary><span class="tri" aria-hidden="true"></span><div><div class="bank">Citizens</div><div class="nm">Adam Dahill</div><div class="ttl"><span>VP, Mortgage Sales Manager</span><span>NMLS #66099</span></div></div></summary>
+          <div class="ct"><a href="tel:+19176966010">(917) 696-6010</a><a href="mailto:adam.dahill@citizensbank.com">adam.dahill@citizensbank.com</a></div></details>
+        <details class="lender"><summary><span class="tri" aria-hidden="true"></span><div><div class="bank">TD Bank</div><div class="nm">Jim Kroll</div><div class="ttl"><span>Mortgage Loan Officer</span><span>NMLS #53335</span></div></div></summary>
+          <div class="ct"><a href="tel:+19175683368">(917) 568-3368</a><a href="mailto:james.kroll@td.com">james.kroll@td.com</a></div></details>
+        <details class="lender"><summary><span class="tri" aria-hidden="true"></span><div><div class="bank">Citibank, N.A.</div><div class="nm">Ron Riemer</div><div class="ttl"><span>AVP, Sr. Home Lending Officer</span><span>NMLS #33210</span></div></div></summary>
+          <div class="ct"><a href="tel:+12123003739">(212) 300-3739</a><a href="mailto:ron.riemer@citi.com">ron.riemer@citi.com</a></div></details>
+      </div>
+      <div class="callout">If the co-op building has its own designated lenders, or you'd rather use your own, just let me know.</div>
+      <p class="fine after">Provided as a courtesy, not a guarantee of services or outcomes. You're free to work with any lender you choose.</p>
+    </div>
+  </article>
+
+  <article class="step" data-step="4">
+    <div class="num"><b>4</b><div class="tick-wrap"><button class="tick" type="button" aria-pressed="false" aria-label="Mark step 4 done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><div class="tick-l">Done?</div></div></div>
+    <div class="body">
+      <h2>Email me a bank statement showing your down payment</h2>
+      <p>Send a recent bank or brokerage statement as a <b>PDF</b> showing you have the funds for your down payment. Not sure what that comes to? Go back to <a href="step-1.html">Step 1</a>: enter the purchase price in Step 2 of the form and it shows your <b>down payment</b>.</p>
+      <div class="acts">
+        <span class="copylbl">Copy this email address:</span>
+        <span class="mail"><span class="addr">i.gong@casa-blanca.com</span><button class="cp" type="button" data-copy="i.gong@casa-blanca.com" aria-label="Copy email address" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></button></span>
+      </div>
+      <p class="fine after">Remember to attach the PDF before you hit send.</p>
+    </div>
+  </article>
+
+  <div class="optdiv" role="separator" aria-label="The next step is only if requested"><span>If requested</span></div>
+
+  <article class="step" data-step="5">
+    <div class="num"><b>5</b><div class="tick-wrap"><button class="tick" type="button" aria-pressed="false" aria-label="Mark step 5 done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button><div class="tick-l">Done?</div></div></div>
+    <div class="body">
+      <div class="kicker"><span class="badge">If requested</span></div>
+      <h2>Extra documents some sellers ask for</h2>
+      <p>Different sellers, listing agents and buildings have different requirements. Some ask for these before they'll accept an offer, so it helps to have them ready. I'll let you know if they're needed. Send each one as a <b>PDF</b>:</p>
+      <ul class="flow">
+        <li><b>Credit report</b> showing your latest score, from Experian, Equifax or TransUnion</li>
+        <li><b>Recent pay stubs</b></li>
+        <li><b>Tax returns</b>, usually the last two years</li>
+      </ul>
+      <div class="acts">
+        <span class="copylbl">Copy this email address:</span>
+        <span class="mail"><span class="addr">i.gong@casa-blanca.com</span><button class="cp" type="button" data-copy="i.gong@casa-blanca.com" aria-label="Copy email address" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></button></span>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="foot">
+  <span>Questions at any point? Call or text me at 914-331-8881, or email i.gong@casa-blanca.com.</span>
+  <span>Gong Realty · Ian Gong (licensed as Lizhi Gong), Licensed Real Estate Salesperson, Casa Blanca Real Estate</span>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var KEY = "gr-coop-checklist-v1";
+
+  var done = {};
+  try { done = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) {}
+  var steps = document.querySelectorAll(".step");
+  function paint(){
+    var req = 0;
+    steps.forEach(function(s){
+      var n = s.dataset.step, on = !!done[n];
+      s.classList.toggle("done", on);
+      var t = s.querySelector(".tick"); t.setAttribute("aria-pressed", on); t.nextElementSibling.textContent = on ? "Done" : "Done?";
+      if (on && n !== "5") req++;
+    });
+    document.getElementById("barFill").style.width = (req / 4 * 100) + "%";
+    document.getElementById("count").innerHTML = req === 4
+      ? "All 4 done. Nice work. <small>· step 5 only if asked</small>"
+      : req + " of 4 done <small>· step 5 only if asked</small>";
+  }
+  steps.forEach(function(s){
+    s.querySelector(".tick").addEventListener("click", function(){
+      done[s.dataset.step] = !done[s.dataset.step];
+      try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {}
+      paint();
+    });
+  });
+  paint();
+
+  var tt;
+  function toast(m){ var t = document.getElementById("toast"); t.textContent = m; t.classList.add("on"); clearTimeout(tt); tt = setTimeout(function(){ t.classList.remove("on"); }, 2200); }
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var v = b.dataset.copy;
+      var ok = function(){ toast("Email address copied"); b.classList.add("ok"); setTimeout(function(){ b.classList.remove("ok"); }, 1600); };
+      var legacy = function(){
+        var ta = document.createElement("textarea"); ta.value = v; ta.setAttribute("readonly", ""); ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+        document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, v.length); var done = false; try { done = document.execCommand("copy"); } catch (e) {} document.body.removeChild(ta);
+        if (done) ok(); else { var r = document.createRange(); r.selectNodeContents(b.previousElementSibling); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); toast("Selected. Press Ctrl+C (or ⌘+C) to copy."); }
+      };
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(v).then(ok, legacy); else legacy();
+    });
+  });
+})();
+</script>
+</body>
+</html>

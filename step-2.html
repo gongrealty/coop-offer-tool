@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Step 2: Buyer Bio — Gong Realty</title>
+<meta name="description" content="Three sample buyer bios from winning co-op offers, and how to tailor one to you with AI." />
+<meta name="robots" content="noindex" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+<style>
+:root{
+  --navy:#0d2748; --navy-2:#132f57; --gold:#b79554; --gold-2:#d4b77c;
+  --bg:#f0ede4; --paper:#fbfaf6; --line:#dcd6c8; --line-strong:#c4bca9; --well:#f5f2ea;
+  --ink:#16223a; --muted:#5e6778; --faint:#8a8f99;
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark;
+    --bg:#0b1628; --paper:#111f36; --line:#22334f; --line-strong:#314767; --well:#0c192d; --ink:#e9edf4; --muted:#a2b3c9; --faint:#7b8ca5; }
+}
+:root[data-theme="dark"]{ color-scheme:dark;
+  --bg:#0b1628; --paper:#111f36; --line:#22334f; --line-strong:#314767; --well:#0c192d; --ink:#e9edf4; --muted:#a2b3c9; --faint:#7b8ca5; }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+.hero{background:var(--navy);color:#eef2f7;padding:calc(24px + env(safe-area-inset-top,0px)) 20px 40px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 360px at 90% -20%, rgba(183,149,84,.26), transparent 60%);pointer-events:none}
+.in{max-width:900px;margin:0 auto;position:relative}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:36px}
+.top a{text-decoration:none;font-size:13px;font-weight:600;color:#c7d2e1}
+.top a:hover{color:#fff}
+.top b{font:600 22px/1 var(--serif)}
+.kicker{font-size:14px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-2);margin:0 0 10px}
+.hero h1{font:600 clamp(40px,6.4vw,72px)/.98 var(--serif);margin:0;text-wrap:balance}
+.hero p{max-width:60ch;color:#c7d2e1;font-size:17px;margin:16px 0 0}
+
+main{max-width:900px;margin:0 auto;padding:28px 20px 48px;display:flex;flex-direction:column;gap:22px}
+.how{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+.how h2{font:600 28px/1.1 var(--serif);margin:0 0 14px}
+.how ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;counter-reset:h}
+.how ol > li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start}
+.how ol > li::before{counter-increment:h;content:counter(h);width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--gold-2);display:grid;place-items:center;font:700 16px/1 var(--sans)}
+.how ol > li b{display:block;font-size:16px}
+.how li span{color:var(--muted)}
+.how ul{margin:8px 0 0;padding-left:20px;color:var(--muted);list-style:disc;display:flex;flex-direction:column;gap:3px}
+.how ul li::marker{color:var(--gold)}
+.how a{font-weight:700}
+
+.mail{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:var(--bg);border-radius:10px;padding:6px 6px 6px 14px;font-weight:600;margin-top:8px;color:var(--ink)}
+.mail .addr{user-select:all}
+.cp{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:8px;background:transparent;color:var(--muted);cursor:pointer}
+.cp:hover{background:color-mix(in srgb,var(--gold) 16%,transparent);color:var(--ink)}
+.cp svg{width:18px;height:18px}
+.cp.ok{color:#2f6b4f}
+.copybar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--bg);padding:12px 0;padding-top:calc(12px + env(safe-area-inset-top,0px));border-bottom:1px solid var(--line)}
+.copybar h2{font:600 28px/1.1 var(--serif);margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#1a1405;border:0;border-radius:11px;padding:14px 24px;font-weight:800;font-size:16px;cursor:pointer;text-decoration:none;transition:transform .12s, box-shadow .12s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px -10px rgba(183,149,84,.8)}
+.btn.navy{background:var(--navy);color:#fff}
+.btn svg{width:19px;height:19px}
+.btn.copied{background:#2f6b4f;color:#fff}
+
+.sample{display:flex;flex-direction:column;gap:8px}
+.sample .lab{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.box{background:var(--well);border:1px solid var(--line-strong);border-radius:12px;padding:20px 22px;font-size:15.5px;line-height:1.7;color:var(--ink);white-space:pre-wrap;cursor:default;box-shadow:inset 0 1px 3px rgba(13,39,72,.06)}
+.lock{font-size:12px;color:var(--faint)}
+.next{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:6px}
+.next a{font-weight:700;text-decoration:none}
+.next a:hover{text-decoration:underline}
+.foot{max-width:900px;margin:0 auto;padding:0 20px 40px;font-size:12.5px;color:var(--faint)}
+@media (max-width:640px){
+  .hero,main{padding-left:16px;padding-right:16px}
+  .how{padding:18px}
+  .btn{width:100%;justify-content:center}
+  .box{padding:16px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="in">
+    <div class="top"><a href="index.html">← Back to your checklist</a><b>Gong Realty</b></div>
+    <p class="kicker">Step 2</p>
+    <h1>Write your buyer bio</h1>
+    <p>Your buyer bio is a short paragraph about who you are. It isn't a love letter to the apartment. It shows the seller and the board that you're responsible and easy to approve. Below are three real bios from offers that won. You'll use them as a model, and AI will write yours.</p>
+  </div>
+</header>
+
+<main>
+  <section class="how">
+    <h2>How to do it</h2>
+    <ol>
+      <li><div><b>Copy the three samples</b><span>Click <b style="display:inline">Copy all three</b> below. It copies all three bios, plus a short note telling the AI what to do.</span></div></li>
+      <li><div><b>Paste them into an AI chat</b><span>Open whichever AI chat you use, start a new chat, and paste (Ctrl+V on a PC, ⌘+V on a Mac).</span></div></li>
+      <li><div><b>Tell the AI about you and this apartment</b><span>Right after the paste, add a few lines so the bio is tailored to this offer:</span>
+        <ul>
+          <li>Your names, and how you know each other if you're buying together</li>
+          <li>What you do for work, and for how long (steady work is what boards look for)</li>
+          <li>Where you live now and how long you've been in New York</li>
+          <li>A few things you love doing: hobbies, pets, favorite spots</li>
+          <li>The co-op building's name or address, and its neighborhood</li>
+          <li>Why this building and neighborhood fit your life (a line or two is plenty)</li>
+        </ul></div></li>
+      <li><div><b>Read it over, then send it to me</b><span>Make sure every detail is true and sounds like you. Keep it to one or two short paragraphs, then email it to me:</span>
+        <span class="mail"><span class="addr">i.gong@casa-blanca.com</span><button class="cp" type="button" data-copy="i.gong@casa-blanca.com" aria-label="Copy email address" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></button></span></div></li>
+    </ol>
+  </section>
+
+  <div class="copybar">
+    <h2>Sample bios</h2>
+    <button class="btn" id="copyAll" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg><span>Copy all three</span></button>
+  </div>
+
+  <div class="sample"><div class="lab">Sample 1</div>
+    <div class="box" id="b1">Jennifer and George are college sweethearts who have been married for two years. They currently live in an apartment on the Upper West Side, and they are very excited about the prospect of buying their first home together in Brooklyn. George works as an actuary for Liberty Franklin, and Jennifer works as a social worker for an organization called Toodles, a nonprofit that helps support Eastern Orthodox Jews who wish to leave their insular communities.
+
+Jennifer is a native New Yorker. She loves the arts, and walks as fast as she talks. George is a country boy from suburban Pennsylvania. He loves to garden and spend time outdoors. Jennifer and George are excited that Park Slope blends a cosmopolitan energy with a wholesome, neighborhood-like feel. They also happen to love the apartment that you are selling. From the charming floor-to-ceiling windows in the living room, to the spacious layout of the bedrooms, to the beautiful Juliette balcony, this is truly Jennifer and George’s dream apartment.</div></div>
+
+  <div class="sample"><div class="lab">Sample 2</div>
+    <div class="box" id="b2">Melanie Smith and Jim Smith are longtime residents of the Upper West Side. The engaged couple bonded over their love of the neighborhood and their passion for work in technology sales (she works at Google, and he works at Dell EMC), remaining loyal to their respective companies for over a decade.
+
+In their spare time, you can find them trying out new restaurants (especially sushi), rooting on their hometown teams (Steelers vs. Pats), taking power yoga classes, and walking their adorable poodle Jack in Central Park or Riverside Park. The soon-to-be Smiths are counting down to their wedding and could not imagine a better place to build their life together than East Gate.</div></div>
+
+  <div class="sample"><div class="lab">Sample 3</div>
+    <div class="box" id="b3">Eugene has been the Vice President of Google’s Data Science division for eight years. He has been an avid New Yorker since coming to the city in the mid-1990s to attend Columbia University. After graduation, he immediately moved to Brooklyn and has called it home ever since.
+
+Eugene is an avid cyclist, beachgoer, and exercise enthusiast. Every morning he rides his bike from his current home in Williamsburg to Prospect Park, where he completes the park loop before starting work. It has been his dream to live by the park for as long as he can remember. To not only live by the park but to do so in such a spectacular apartment, with such beautiful views, would make him the happiest man on earth.</div></div>
+
+  <p class="lock">These samples are for reference only and can't be edited here. Your own version gets written with AI.</p>
+
+  <div class="next">
+    <a href="step-1.html">← Step 1: Financial statement</a>
+    <a href="index.html">Back to your checklist: Step 3 →</a>
+  </div>
+</main>
+
+<footer class="foot">Gong Realty · Ian Gong (licensed as Lizhi Gong), Licensed Real Estate Salesperson, Casa Blanca Real Estate · 914-331-8881</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById("copyAll"), label = btn.querySelector("span");
+  function text(){
+    var s = ["b1","b2","b3"].map(function(id, i){ return "SAMPLE " + (i + 1) + "\n" + document.getElementById(id).textContent.trim(); });
+    return "Below are three sample buyer bios from winning NYC co-op offers. Using the same tone, length and style, write a new buyer bio for me. " +
+      "Make it specific to me, to the co-op building I'm applying to, and to its neighborhood. Focus on who I am: that I'm responsible, financially steady and a good neighbor the board will feel confident approving. Keep any lines about loving the apartment short; it shouldn't read like a love letter. After the samples I'll tell you about myself and the apartment. " +
+      "If anything important is missing, ask me before you write it.\n\n" + s.join("\n\n") + "\n\nABOUT ME AND THE APARTMENT:\n";
+  }
+  function done(msg){ btn.classList.add("copied"); label.textContent = msg; setTimeout(function(){ btn.classList.remove("copied"); label.textContent = "Copy all three"; }, 2600); }
+  function legacyCopy(t){
+    var ta = document.createElement("textarea");
+    ta.value = t; ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;";
+    document.body.appendChild(ta);
+    ta.focus(); ta.select(); ta.setSelectionRange(0, t.length); // setSelectionRange for Safari / iOS
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    return ok;
+  }
+  btn.addEventListener("click", function(){
+    var t = text();
+    var fail = function(){ done(legacyCopy(t) ? "Copied. Now paste it into your AI chat" : "Couldn't copy. Select the bios and copy them by hand"); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(t).then(function(){ done("Copied. Now paste it into your AI chat"); }, fail);
+    } else fail();
+  });
+  document.querySelectorAll("[data-copy]").forEach(function(b){
+    b.addEventListener("click", function(){
+      var v = b.dataset.copy;
+      var ok = function(){ b.classList.add("ok"); b.title = "Copied!"; setTimeout(function(){ b.classList.remove("ok"); b.title = "Copy email address"; }, 1600); };
+      var legacy = function(){ if (legacyCopy(v)) ok(); else { var r = document.createRange(); r.selectNodeContents(b.previousElementSibling); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); } };
+      if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(v).then(ok, legacy); else legacy();
+    });
+  });
+})();
+</script>
+</body>
+</html>
